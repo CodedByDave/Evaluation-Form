@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youngji International School - Teacher Evaluation System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="./assets/images/school-logo.png" alt="Youngji International School logo" class="logo">
+    <div>
+      <div class="school-name">Youngji International School</div>
+      <div class="subtitle">Teacher Evaluation System</div>
+    </div>
+  </div>
+
+  <nav class="top-actions">
+    <button class="header-btn home-btn" data-view="home">⌂ Home</button>
+    <button class="header-btn" id="teacherPortalBtn">Teachers Portal</button>
+    <button class="header-btn" id="adminBtn">Admin</button>
+  </nav>
+</header>
+
+<aside class="sidebar">
+  <div class="nav-label">MAIN NAVIGATION</div>
+  <button class="side-link active" data-view="home">⌂ Home</button>
+  <div class="nav-label other-label">OTHER</div>
+  <button class="side-link" data-view="contact">✉ Contact Us</button>
+</aside>
+
+<main class="main" id="app"></main>
+
+<div class="modal hidden" id="loginModal">
+  <div class="modal-card">
+    <button class="modal-close" id="closeModal">×</button>
+    <div class="eyebrow" id="loginEyebrow">TEACHERS PORTAL</div>
+    <h2 id="loginTitle">Teachers Portal Login</h2>
+    <p id="loginDescription"></p>
+    <form id="loginForm">
+      <label>Username
+        <input id="username" required autocomplete="username">
+      </label>
+      <label>Password
+        <input id="password" type="password" required autocomplete="current-password">
+      </label>
+      <div class="login-error" id="loginError"></div>
+      <button class="primary-btn" type="submit">Sign In</button>
+    </form>
+    <div class="demo-credentials" id="demoCredentials"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
