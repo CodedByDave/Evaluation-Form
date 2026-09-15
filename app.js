@@ -29,7 +29,7 @@ const teachers = [
   },
   {
     id: "shanley",
-    name: "Shanley",
+    name: "Shanley Marquez",
     subject: "Grade 1 (Self-Contained)",
     department: "Performance Arts Club (Acting)",
     photo: "assets/images/tr-shanley.jpg"
@@ -71,7 +71,7 @@ const teachers = [
   },
   {
     id: "carl",
-    name: "Carl Kevin Bello",
+    name: "Kevin Bello",
     subject: "Mathematics",
     department: "Safety and Security",
     photo: "assets/images/tr-carl.jpg"
